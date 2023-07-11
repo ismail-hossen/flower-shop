@@ -245,7 +245,9 @@ header {
   border: none;
   border-radius: 5px;
   padding-left: 20px;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.063);
 }
+
 /* footer section */
 footer {
   height: 350px;
