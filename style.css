@@ -4,6 +4,11 @@
   font-family: "Lato", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-color: #fceef1;
   box-shadow: 5px -10px 10px 6px black;
@@ -35,7 +40,7 @@ header {
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 20px;
-  color: #272727;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 .btn-primary {
@@ -44,6 +49,7 @@ header {
   border: 0;
   color: white;
   font-size: 15px;
+  height: 50px;
   padding: 12px 25px;
 }
 
@@ -53,37 +59,121 @@ header {
   padding: 40px 0 0 40px;
 }
 
-/* footer section */
-footer {
-  height: 350px;
-  background-color: #111010;
+/* featured flowers section  */
+.featured-section {
+  height: 1300px;
   display: flex;
+  flex-direction: column;
 }
-
-footer div {
-  width: 520px;
+.featured-section > div {
+  width: 80%;
   margin: auto;
   text-align: center;
 }
 
-footer div h1 span {
-  color: #e55473;
+.featured-intro {
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
-footer div h1 {
-  color: #ffffff;
+.featured-intro h1 {
+  color: #424242;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.featured-intro p {
+  margin: 20px 0 20px 0;
+  color: #a5a5a5;
+  line-height: 25px;
+}
+.featured-flowers {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-flowers > div {
+  width: 450px;
+  margin: 20px 15px;
+}
+
+.featured-flowers-first > div {
+  background-color: #f2dee7;
+  border-radius: 225px 225px 0 0;
+  height: 550px;
   margin-bottom: 20px;
 }
 
-.footer-p1 {
-  color: #ffffff;
-  margin-bottom: 15px;
-  line-height: 25px;
+.featured-flowers-second > div {
+  background-color: #d9eff1;
+  border-radius: 225px 225px 0 0;
+  height: 550px;
+  margin-bottom: 20px;
 }
 
-.footer-p2 {
-  color: #ffffff59;
-  font-size: 14px;
+.featured-flowers-third > div {
+  background-color: #e3ebdb;
+  border-radius: 225px 225px 0 0;
+  height: 550px;
+  margin-bottom: 20px;
+}
+
+.featured-flowers-img {
+  height: 450px;
+  margin-top: 100px;
+}
+
+.flowers-bottom-title {
+  display: inline;
+  border-bottom: 2px solid;
+}
+
+/* support system area */
+.support-system-area {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+
+.support-system-area h1 {
+  color: #505050;
+  margin-top: 20px;
+}
+/* discount section  */
+.discount-sec {
+  background-color: #fef6f8;
+  height: 600px;
+  display: flex;
+  margin-top: 80px;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.discount-des-area {
+  text-align: center;
+}
+
+.discount-title {
+  color: #272727;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.discount-title span {
+  color: #e55473;
+}
+
+.discount-des {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 25px 0;
 }
 
 /* instagram section  */
@@ -116,9 +206,76 @@ footer div h1 {
 }
 
 .insta-images {
+  display: flex;
   margin-top: 50px;
 }
 
 .insta-images img {
-  margin: 10px;
+  margin: 15px;
+}
+
+/* subscribe section */
+.subscribe-section > div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(flower-asset/Rectangle-9.png);
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-section div h1 {
+  color: #272727;
+  margin-bottom: 15px;
+}
+
+.subscribe-section div p {
+  color: #b2b3b5;
+  margin-bottom: 35px;
+}
+
+.subscribe-section div input {
+  height: 50px;
+  width: 450px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+/* footer section */
+footer {
+  height: 350px;
+  background-color: #111010;
+  display: flex;
+  margin-top: 100px;
+}
+
+footer div {
+  width: 520px;
+  margin: auto;
+  text-align: center;
+}
+
+footer div h1 span {
+  color: #e55473;
+}
+
+footer div h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-p1 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+.footer-p2 {
+  color: #ffffff59;
+  font-size: 14px;
 }
